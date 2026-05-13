@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progetti — Martina Bazzani</title>
+  <meta name="description" content="Progetti di Martina Bazzani — Grafica, Visual Art, Brand Identity." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div style="position:fixed;bottom:32px;right:32px;z-index:99999;display:flex;flex-direction:column;gap:8px;">
+    <button id="btn-top" aria-label="Torna in cima" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <button id="btn-bottom" aria-label="Vai in fondo" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__name">Martina Bazzani</span>
+      <span class="nav__sub">Portfolio 2026</span>
+    </a>
+    <div class="nav__right">
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="about.html"    class="nav__link">About</a></li>
+        <li><a href="progetti.html" class="nav__link">Progetti</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="nav__overlay" role="dialog">
+    <a href="index.html"    class="ov-link">Home</a>
+    <a href="about.html"    class="ov-link">About</a>
+    <a href="progetti.html" class="ov-link">Progetti</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="progetti-hero">
+      <div class="container">
+        <h1 class="progetti-hero__title hero-anim">Progetti</h1>
+        <p class="progetti-hero__sub hero-anim hero-anim-2">Grafica &nbsp;·&nbsp; Visual Art</p>
+</div>
+      </div>
+    </section>
+
+    <!-- GRAFICA — griglia 2 colonne -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+
+        <p class="project-section-label reveal">Grafica</p>
+        <p class="progetti-intro reveal">Progetti scolastici realizzati durante il corso di Grafica Pubblicitaria presso Istituto Infobasic.</p>
+
+        <div class="work-grid work-grid--2col" style="margin-top:32px">
+
+          <a href="re-view.html" class="work-card reveal">
+            <div class="work-card__img">
+              <img fetchpriority="high" decoding="async" src="review/Cover.jpg" alt="RE-VIEW Eyewear">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">RE-VIEW Eyewear</span>
+              <span class="work-card__cat">Brand Identity, Packaging, Digital Launch Strategy · 2026</span>
+            </div>
+          </a>
+
+          <a href="vitaelis.html" class="work-card reveal reveal--delay-1">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="Vitaelis/Cover.jpg" alt="Vitaelis">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Vitaelis</span>
+              <span class="work-card__cat">Brand Identity, Packaging, ADV · 2025</span>
+            </div>
+          </a>
+
+          <a href="zipeatz.html" class="work-card reveal reveal--delay-2">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="ZIP-EATZ/Cover.jpg" alt="Zip-Eatz">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Zip-Eatz</span>
+              <span class="work-card__cat">Brand Identity, Packaging, ADV · 2025</span>
+            </div>
+          </a>
+
+          <a href="envelop.html" class="work-card reveal reveal--delay-4">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="Risotìn/Cover.jpg" alt="Risotìn">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Risotìn</span>
+              <span class="work-card__cat">Brand Identity, Packaging, ADV · 2024</span>
+            </div>
+          </a>
+
+          <a href="orso-sobrio.html" class="work-card reveal reveal--delay-3">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="Orso sobrio/Cover.jpg" alt="Orso Sobrio">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Orso Sobrio</span>
+              <span class="work-card__cat">Brand Identity, Packaging, ADV · 2025</span>
+            </div>
+          </a>
+
+          <a href="progetto-6.html" class="work-card reveal reveal--delay-5">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="Saime/Cover.jpg" alt="Saime">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Saime</span>
+              <span class="work-card__cat">Brand Identity, Packaging, ADV · 2025</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- VISUAL & ART -->
+        <p class="project-section-label reveal" style="margin-top:0">Visual &amp; Art</p>
+
+        <div class="work-grid work-grid--2col reveal" style="margin-top:32px">
+
+          <a href="avis.html" class="work-card">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="avis/cover.jpg" alt="Avis">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Avis</span>
+              <span class="work-card__cat">Campagna Sociale · 2025</span>
+            </div>
+          </a>
+
+
+          <a href="siracusa.html" class="work-card">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="siracusa/Cover.jpg" alt="Siracusa">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Siracusa</span>
+              <span class="work-card__cat">Impaginazione · Illustrazione · 2025</span>
+            </div>
+          </a>
+
+
+        </div>
+
+        <!-- ALTRI PROGETTI -->
+        <p class="project-section-label reveal" style="margin-top:0">Altri Progetti</p>
+
+        <div class="work-grid work-grid--2col reveal" style="margin-top:32px">
+
+          <a href="fiat-topolino.html" class="work-card reveal">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="topolino rock/cover.jpg" alt="Fiat Topolino Rock">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Fiat Topolino Rock</span>
+              <span class="work-card__cat">Campagna Teaser Social · 2025</span>
+            </div>
+          </a>
+
+          <a href="baci-perugina.html" class="work-card reveal reveal--delay-1">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="baci perugina/Cover.jpg" alt="Baci Perugina Ruby">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Baci Perugina Ruby</span>
+              <span class="work-card__cat">Campagna Teaser Social · 2025</span>
+            </div>
+          </a>
+
+          <a href="funko.html" class="work-card reveal reveal--delay-2">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="funko/Cover.jpg" alt="Funko Pop! Halloween">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Funko</span>
+              <span class="work-card__cat">Impaginazione · 2025</span>
+            </div>
+          </a>
+
+          <a href="acqua-e-sapone.html" class="work-card reveal reveal--delay-3">
+            <div class="work-card__img">
+              <img loading="lazy" decoding="async" src="acqua e sapone/cover.jpg" alt="Acqua &amp; Sapone">
+              <div class="work-card__overlay"><span>Vedi Progetto</span></div>
+            </div>
+            <div class="work-card__meta">
+              <span class="work-card__name">Acqua &amp; Sapone</span>
+              <span class="work-card__cat">Restyling · 2025</span>
+            </div>
+          </a>
+
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div>
+          <p class="footer__brand-name">Martina Bazzani</p>
+          <p class="footer__brand-loc">Montesilvano · Pescara</p>
+        </div>
+        <div class="footer__links">
+          <a href="mailto:martinabazzanigraphic@gmail.com" class="footer__link" style="display:flex;align-items:center;gap:7px;">martinabazzanigraphic@gmail.com<img src="loghi/email.png" alt="Email" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+          <a href="https://www.instagram.com/martinabazzanidesign/" target="_blank" rel="noopener" class="footer__link" style="display:flex;align-items:center;gap:7px;">@martinabazzanidesign<img src="loghi/Logo instagram.png" alt="Instagram" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Martina Bazzani. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                          

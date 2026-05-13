@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siracusa — Martina Bazzani</title>
+  <meta name="description" content="Siracusa — Visual Art. Portfolio di Martina Bazzani." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div style="position:fixed;bottom:32px;right:32px;z-index:99999;display:flex;flex-direction:column;gap:8px;">
+    <button id="btn-top" aria-label="Torna in cima" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <button id="btn-bottom" aria-label="Vai in fondo" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+
+
+  <nav class="nav" role="navigation">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__name">Martina Bazzani</span>
+      <span class="nav__sub">Portfolio 2026</span>
+    </a>
+    <div class="nav__right">
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="about.html"    class="nav__link">About</a></li>
+        <li><a href="progetti.html" class="nav__link">Progetti</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__overlay" role="dialog">
+    <a href="index.html" class="ov-link">Home</a>
+    <a href="about.html" class="ov-link">About</a>
+    <a href="progetti.html" class="ov-link">Progetti</a>
+  </div>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-hero-pre reveal">
+          <a href="progetti.html">Progetti</a>
+          <span>·</span>
+          Visual Art
+        </p>
+        <h1 class="project-title reveal d1">Siracusa</h1>
+        <div class="brief-grid reveal d2">
+          <div>
+            <p class="brief-label">Brief</p>
+            <p class="brief-text">Progettazione editoriale della prima e quarta di copertina di una guida territoriale dedicata alla città di Siracusa, accompagnata dall'impaginazione del corpo testo e delle immagini interne. L'obiettivo era creare un prodotto editoriale elegante, raffinato e riconoscibile, capace di distinguersi dalle tradizionali guide turistiche presenti sul mercato. L'estetica combina minimalismo editoriale e richiami alla tradizione siciliana attraverso una palette luminosa, elementi decorativi ispirati alle ceramiche mediterranee e un layout pulito. All'interno della guida sono state inoltre progettate e realizzate illustrazioni per l'apertura dei capitoli, ciascuna sviluppata in relazione al tema trattato, con funzione sia narrativa che decorativa.</p>
+          </div>
+          <div>
+            <div class="detail-row"><span class="detail-key">Anno</span><span class="detail-val">2025</span></div>
+            <div class="detail-row"><span class="detail-key">Progetto</span><span class="detail-val">Impaginazione · Illustrazione</span></div>
+            <div class="detail-row"><span class="detail-key">Cliente</span><span class="detail-val">Susil Edizioni, privati</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="gallery-block img-full proj-cover reveal">
+        <img fetchpriority="high" decoding="async" src="siracusa/Cover.jpg" alt="Siracusa cover" style="aspect-ratio:16/9;object-fit:cover;">
+      </div>
+    </div>
+
+    <section class="proj-gallery-section">
+      <div class="container">
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="siracusa/2.jpg" alt="Siracusa" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="siracusa/3.jpg" alt="Siracusa" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="siracusa/4.jpg" alt="Siracusa" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="siracusa/5-.jpg" alt="Siracusa" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full proj-close reveal">
+          <img loading="lazy" decoding="async" src="siracusa/5.jpg" alt="Siracusa" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="proj-nav">
+          <a href="avis.html" class="proj-nav__item proj-nav__item--prev">
+            <span class="proj-nav__sub">← Progetto Precedente</span>
+            <span class="proj-nav__title">Avis</span>
+          </a>
+          <a href="fiat-topolino.html" class="proj-nav__item proj-nav__item--next">
+            <span class="proj-nav__sub">Progetto Successivo →</span>
+            <span class="proj-nav__title">Fiat Topolino Rock</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div>
+          <p class="footer__brand-name">Martina Bazzani</p>
+          <p class="footer__brand-loc">Montesilvano · Pescara</p>
+        </div>
+        <div class="footer__links">
+          <a href="mailto:martinabazzanigraphic@gmail.com" class="footer__link" style="display:flex;align-items:center;gap:7px;">martinabazzanigraphic@gmail.com<img src="loghi/email.png" alt="Email" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+          <a href="https://www.instagram.com/martinabazzanidesign/" target="_blank" rel="noopener" class="footer__link" style="display:flex;align-items:center;gap:7px;">@martinabazzanidesign<img src="loghi/Logo instagram.png" alt="Instagram" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Martina Bazzani. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acqua &amp; Sapone — Martina Bazzani</title>
+  <meta name="description" content="Acqua &amp; Sapone — Portfolio di Martina Bazzani." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div style="position:fixed;bottom:32px;right:32px;z-index:99999;display:flex;flex-direction:column;gap:8px;">
+    <button id="btn-top" aria-label="Torna in cima" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <button id="btn-bottom" aria-label="Vai in fondo" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+
+  <nav class="nav" role="navigation">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__name">Martina Bazzani</span>
+      <span class="nav__sub">Portfolio 2026</span>
+    </a>
+    <div class="nav__right">
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="about.html"    class="nav__link">About</a></li>
+        <li><a href="progetti.html" class="nav__link">Progetti</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__overlay" role="dialog">
+    <a href="index.html" class="ov-link">Home</a>
+    <a href="about.html" class="ov-link">About</a>
+    <a href="progetti.html" class="ov-link">Progetti</a>
+  </div>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-hero-pre reveal">
+          <a href="progetti.html">Progetti</a>
+          <span>·</span>
+          Restyling
+        </p>
+        <h1 class="project-title reveal d1">Acqua &amp;<br>Sapone</h1>
+        <div class="brief-grid reveal d2">
+          <div>
+            <p class="brief-label">Brief</p>
+            <p class="brief-text">Progettazione di un restyling dell'identità visiva di Acqua &amp; Sapone con l'obiettivo di modernizzare il brand mantenendone riconoscibilità, valori e vicinanza al pubblico. Il progetto comprende redesign del logo, sviluppo del manuale d'identità visiva e applicazioni coordinate su packaging, merchandising, retail, social e supporti digitali. Il restyling adotta un linguaggio grafico più minimale, pulito e contemporaneo, ispirato ai codici visivi del settore beauty e personal care. Sono stati semplificati forme e dettagli del marchio originale attraverso l'utilizzo di flat colors, angoli arrotondati e un nuovo sistema tipografico più leggibile e versatile.</p>
+            <div class="pdf-buttons">
+              <button class="btn btn--ghost btn--sm pdf-open-btn"
+                      data-pdf="acqua e sapone/Manuale del Logo.pdf"
+                      data-title="Manuale del Logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Manuale del Logo
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="detail-row"><span class="detail-key">Anno</span><span class="detail-val">2025</span></div>
+            <div class="detail-row"><span class="detail-key">Progetto</span><span class="detail-val">Restyling</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="gallery-block img-full proj-cover reveal">
+        <img fetchpriority="high" decoding="async" src="acqua e sapone/cover.jpg" alt="Acqua &amp; Sapone — Cover">
+      </div>
+    </div>
+
+    <section class="proj-gallery-section">
+      <div class="container">
+
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/1.jpg" alt="Acqua &amp; Sapone — 01" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/2.jpg" alt="Acqua &amp; Sapone — 02" style="aspect-ratio:21/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/3.jpg" alt="Acqua &amp; Sapone — 03" style="aspect-ratio:21/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/4.jpg" alt="Acqua &amp; Sapone — 04" style="aspect-ratio:32/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/5.jpg" alt="Acqua &amp; Sapone — 05">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/6.jpg" alt="Acqua &amp; Sapone — 06">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/7.jpg" alt="Acqua &amp; Sapone — 07">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/8.jpg" alt="Acqua &amp; Sapone — 08">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/9.jpg" alt="Acqua &amp; Sapone — 09">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/10.jpg" alt="Acqua &amp; Sapone — 10">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/11.jpg" alt="Acqua &amp; Sapone — 11">
+        </div>
+        <div class="gallery-block img-full proj-cover reveal">
+          <img loading="lazy" decoding="async" src="acqua e sapone/12.jpg" alt="Acqua &amp; Sapone — 12">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="proj-nav">
+          <a href="funko.html" class="proj-nav__item proj-nav__item--prev">
+            <span class="proj-nav__sub">← Progetto Precedente</span>
+            <span class="proj-nav__title">Funko</span>
+          </a>
+          <a href="progetti.html" class="proj-nav__item proj-nav__item--next">
+            <span class="proj-nav__sub">Tutti i Progetti →</span>
+            <span class="proj-nav__title">Progetti</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div>
+          <p class="footer__brand-name">Martina Bazzani</p>
+          <p class="footer__brand-loc">Montesilvano · Pescara</p>
+        </div>
+        <div class="footer__links">
+          <a href="mailto:martinabazzanigraphic@gmail.com" class="footer__link" style="display:flex;align-items:center;gap:7px;">martinabazzanigraphic@gmail.com<img src="loghi/email.png" alt="Email" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+          <a href="https://www.instagram.com/martinabazzanidesign/" target="_blank" rel="noopener" class="footer__link" style="display:flex;align-items:center;gap:7px;">@martinabazzanidesign<img src="loghi/Logo instagram.png" alt="Instagram" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Martina Bazzani. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <style>
+    .pdf-buttons { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+    .pdf-modal {
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+    }
+    .pdf-modal.is-open { opacity: 1; pointer-events: all; }
+    .pdf-modal__backdrop {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0.90); backdrop-filter: blur(6px);
+    }
+    .pdf-modal__window {
+      position: relative; z-index: 1;
+      width: min(94vw, 1280px); height: min(92vh, 1080px);
+      display: flex; flex-direction: column;
+      background: rgb(15,15,15);
+      border: 1px solid rgba(235,235,228,0.10);
+      border-radius: 8px; overflow: hidden;
+      transform: translateY(18px); transition: transform 0.3s ease;
+    }
+    .pdf-modal.is-open .pdf-modal__window { transform: translateY(0); }
+    .pdf-modal__toolbar {
+      display: flex; align-items: center; padding: 0 20px; gap: 16px;
+      height: 52px; min-height: 52px; flex-shrink: 0;
+      background: rgb(15,15,15);
+      border-bottom: 1px solid rgba(235,235,228,0.10);
+      position: relative; z-index: 2;
+    }
+    .pdf-modal__doc-title {
+      font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(235,235,228,0.40); flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .pdf-modal__close {
+      width: 30px; height: 30px; flex-shrink: 0; background: none;
+      border: 1px solid rgba(235,235,228,0.14); border-radius: 4px; cursor: none;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(235,235,228,0.50); transition: color 0.18s, border-color 0.18s;
+    }
+    .pdf-modal__close:hover { color: rgba(235,235,228,1); border-color: rgba(235,235,228,0.40); }
+    .pdf-clip { flex: 1; min-height: 0; position: relative; }
+    .pdf-clip iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; display: block; }
+    body.pdf-open .cursor-dot,
+    body.pdf-open .cursor-ring { opacity: 0 !important; }
+    .pdf-modal__window, .pdf-modal__window * { cursor: auto !important; }
+    .pdf-modal__close { cursor: none !important; }
+  </style>
+
+  <div id="pdf-modal" class="pdf-modal" aria-hidden="true">
+    <div class="pdf-modal__backdrop"></div>
+    <div class="pdf-modal__window">
+      <div class="pdf-modal__toolbar">
+        <span id="pdf-title" class="pdf-modal__doc-title"></span>
+        <button id="pdf-close" class="pdf-modal__close" aria-label="Chiudi">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="pdf-clip">
+        <iframe id="pdf-frame" src="" title="PDF Viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var modal = document.getElementById('pdf-modal');
+      var backdrop = modal.querySelector('.pdf-modal__backdrop');
+      var closeBtn = document.getElementById('pdf-close');
+      var frame = document.getElementById('pdf-frame');
+      var titleEl = document.getElementById('pdf-title');
+      var scrollY = 0;
+      function openPDF(src, title) {
+        titleEl.textContent = title || '';
+        frame.src = src + '#toolbar=0&navpanes=0';
+        scrollY = window.scrollY;
+        document.body.style.top = '-' + scrollY + 'px';
+        document.body.style.position = 'fixed';
+        document.body.style.width = '100%';
+        document.body.classList.add('pdf-open');
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+      }
+      function closePDF() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        document.body.classList.remove('pdf-open');
+        window.scrollTo(0, scrollY);
+        setTimeout(function () { frame.src = ''; }, 300);
+      }
+      document.querySelectorAll('.pdf-open-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          openPDF(btn.dataset.pdf, btn.dataset.title);
+        });
+      });
+      closeBtn.addEventListener('click', closePDF);
+      backdrop.addEventListener('click', closePDF);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closePDF();
+      });
+    })();
+  </script>
+
+</body>
+</html>

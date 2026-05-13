@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saime — Martina Bazzani</title>
+  <meta name="description" content="Saime — Brand Identity. Portfolio di Martina Bazzani." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div style="position:fixed;bottom:32px;right:32px;z-index:99999;display:flex;flex-direction:column;gap:8px;">
+    <button id="btn-top" aria-label="Torna in cima" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <button id="btn-bottom" aria-label="Vai in fondo" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+
+
+  <nav class="nav" role="navigation">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__name">Martina Bazzani</span>
+      <span class="nav__sub">Portfolio 2026</span>
+    </a>
+    <div class="nav__right">
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="about.html"    class="nav__link">About</a></li>
+        <li><a href="progetti.html" class="nav__link">Progetti</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__overlay" role="dialog">
+    <a href="index.html" class="ov-link">Home</a>
+    <a href="about.html" class="ov-link">About</a>
+    <a href="progetti.html" class="ov-link">Progetti</a>
+  </div>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="container">
+        <p class="project-hero-pre reveal">
+          <a href="progetti.html">Progetti</a>
+          <span>·</span>
+          Brand Identity · Packaging · ADV
+        </p>
+        <h1 class="project-title reveal d1">Saime</h1>
+        <div class="brief-grid reveal d2">
+          <div>
+            <p class="brief-label">Brief</p>
+            <p class="brief-text">Saime è un progetto di naming, brand identity, design di prodotto e campagna pubblicitaria per una linea di T-shirt in cotone 100% organico certificato GOTS. Il nome deriva dal giapponese ("nuovo germoglio"). Le grafiche delle magliette sono illustrazioni disegnate a mano raffiguranti spiriti della mitologia giapponese (Yōkai), ciascuna con il nome in kanji. Il packaging è un tubo in cartone riciclato grezzo. La campagna pubblicitaria ruota attorno al concept "Green Flag", declinata su manifesto, post e carosello Instagram, post Facebook, storia e banner web.</p>
+          </div>
+          <div>
+            <div class="detail-row"><span class="detail-key">Anno</span><span class="detail-val">2025</span></div>
+            <div class="detail-row"><span class="detail-key">Progetto</span><span class="detail-val">Brand Identity · Packaging · ADV</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="gallery-block img-full proj-cover reveal">
+        <img fetchpriority="high" decoding="async" src="Saime/Cover.jpg" alt="Saime cover">
+      </div>
+    </div>
+
+    <section class="proj-gallery-section">
+      <div class="container">
+
+        <!-- 1 — full -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/1.jpg" alt="Saime">
+        </div>
+
+        <!-- 2 — full 16/9 -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/2.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+
+        <!-- 3 — full -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/3.jpg" alt="Saime">
+        </div>
+
+        <!-- 4 — full -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/4.jpg" alt="Saime">
+        </div>
+
+        <!-- 5 + 6 — asimmetrico lato corto a sinistra h:520 -->
+        <div class="gallery-block img-asymm-rev reveal" style="height:520px;">
+          <div class="img-item reveal"><img loading="lazy" decoding="async" src="Saime/5.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="img-item reveal d1"><img loading="lazy" decoding="async" src="Saime/6.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+
+        <!-- 7 + 8 — asimmetrico lato largo a sinistra h:520 -->
+        <div class="gallery-block img-asymm reveal" style="height:520px;">
+          <div class="img-item reveal"><img loading="lazy" decoding="async" src="Saime/7.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="img-item reveal d1"><img loading="lazy" decoding="async" src="Saime/8.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+
+        <!-- NUOVE IMMAGINI — 9–18 -->
+
+        <!-- 9–12 — 4x 16:9 full width -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/9.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/10.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/11.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/12.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+
+        <!-- 13 + 14 — asimmetrica lato corto a sinistra h:520 come Risotìn -->
+        <div class="gallery-block img-asymm-rev reveal" style="height:520px;">
+          <div class="img-item reveal"><img loading="lazy" decoding="async" src="Saime/13.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="img-item reveal d1"><img loading="lazy" decoding="async" src="Saime/14.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+
+        <!-- 15 — 16:9 full width -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/15.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+
+        <!-- 16 + 17 — basse h:800 -->
+        <div class="gallery-block img-full reveal" style="height:520px;overflow:hidden;">
+          <img loading="lazy" decoding="async" src="Saime/16.jpg" alt="Saime" style="width:100%;height:100%;aspect-ratio:unset;object-fit:cover;">
+        </div>
+        <div class="gallery-block img-full reveal" style="height:520px;overflow:hidden;">
+          <img loading="lazy" decoding="async" src="Saime/17.jpg" alt="Saime" style="width:100%;height:100%;aspect-ratio:unset;object-fit:cover;">
+        </div>
+
+        <!-- 18 — 16:9 full width -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/18.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+
+        <!-- 19 + 20 — asimmetrica lato corto a destra h:520 -->
+        <div class="gallery-block img-asymm reveal" style="height:520px;">
+          <div class="img-item reveal"><img loading="lazy" decoding="async" src="Saime/19.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="img-item reveal d1"><img loading="lazy" decoding="async" src="Saime/20.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+
+        <!-- 21 — 16:9 full width -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/21.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+
+        <!-- 22 — 16:9 full width -->
+        <div class="gallery-block img-full reveal">
+          <img loading="lazy" decoding="async" src="Saime/22.jpg" alt="Saime" style="aspect-ratio:16/9;object-fit:cover;">
+        </div>
+
+        <!-- 23 + 24 — asimmetrica lato corto a sinistra h:520 -->
+        <div class="gallery-block img-asymm-rev reveal" style="height:520px;">
+          <div class="img-item reveal"><img loading="lazy" decoding="async" src="Saime/23.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="img-item reveal d1"><img loading="lazy" decoding="async" src="Saime/24.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+
+        <!-- 25 + 26 — asimmetrica lato corto a destra h:520 -->
+        <div class="gallery-block img-asymm reveal" style="height:520px;">
+          <div class="img-item reveal"><img loading="lazy" decoding="async" src="Saime/25.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+          <div class="img-item reveal d1"><img loading="lazy" decoding="async" src="Saime/26.jpg" alt="Saime" style="width:100%;height:100%;object-fit:cover;"></div>
+        </div>
+
+        <!-- 27 — ultima come cover -->
+        <div class="gallery-block img-full proj-close reveal">
+          <img loading="lazy" decoding="async" src="Saime/27.jpg" alt="Saime">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="proj-nav">
+          <a href="orso-sobrio.html" class="proj-nav__item proj-nav__item--prev">
+            <span class="proj-nav__sub">← Progetto Precedente</span>
+            <span class="proj-nav__title">Orso Sobrio</span>
+          </a>
+          <a href="avis.html" class="proj-nav__item proj-nav__item--next">
+            <span class="proj-nav__sub">Progetto Successivo →</span>
+            <span class="proj-nav__title">Avis</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div>
+          <p class="footer__brand-name">Martina Bazzani</p>
+          <p class="footer__brand-loc">Montesilvano · Pescara</p>
+        </div>
+        <div class="footer__links">
+          <a href="mailto:martinabazzanigraphic@gmail.com" class="footer__link" style="display:flex;align-items:center;gap:7px;">martinabazzanigraphic@gmail.com<img src="loghi/email.png" alt="Email" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+          <a href="https://www.instagram.com/martinabazzanidesign/" target="_blank" rel="noopener" class="footer__link" style="display:flex;align-items:center;gap:7px;">@martinabazzanidesign<img src="loghi/Logo instagram.png" alt="Instagram" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Martina Bazzani. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

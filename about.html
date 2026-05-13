@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Martina Bazzani</title>
+  <meta name="description" content="Martina Bazzani — Graphic Designer e Visual Artist. Formazione, competenze e percorso professionale." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div style="position:fixed;bottom:32px;right:32px;z-index:99999;display:flex;flex-direction:column;gap:8px;">
+    <button id="btn-top" aria-label="Torna in cima" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+    <button id="btn-bottom" aria-label="Vai in fondo" style="width:40px;height:40px;background:transparent;border:1.5px solid rgba(235,235,228,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.2s ease;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__name">Martina Bazzani</span>
+      <span class="nav__sub">Portfolio 2026</span>
+    </a>
+    <div class="nav__right">
+      <ul class="nav__links">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="about.html"    class="nav__link">About</a></li>
+        <li><a href="progetti.html" class="nav__link">Progetti</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE OVERLAY -->
+  <div class="nav__overlay" role="dialog">
+    <a href="index.html"    class="ov-link">Home</a>
+    <a href="about.html"    class="ov-link">About</a>
+    <a href="progetti.html" class="ov-link">Progetti</a>
+  </div>
+
+  <main>
+
+    <!-- ===== HERO ABOUT ===== -->
+    <section class="about-page-title-section">
+      <h1 class="about-page-title hero-anim">About</h1>
+    </section>
+    <section class="about-hero-section">
+      <div class="about-hero-inner">
+
+        <div class="about-hero__img-wrap hero-anim">
+          <img fetchpriority="high" decoding="async" src="profilo/IMG_20221120_222539_350.jpg" alt="Martina Bazzani" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+
+        <div class="about-hero__content">
+          <h2 class="about-hero__title hero-anim hero-anim-3">Graphic Designer<br><em class="about-amp">&amp;</em> Visual Artist</h2>
+          <div style="width:100%;height:1px;background:var(--border);margin:4px 0 8px;"></div>
+          <p class="about-hero__bio hero-anim hero-anim-4">
+            Designer e Visual Artist che intreccia creatività, comunicazione visiva e nuove tecnologie. Ho mosso i primi passi al Liceo Artistico G. Misticoni di Pescara, per poi approfondire illustrazione, storytelling e tecniche grafiche all'Accademia di Belle Arti di Macerata, dove ho conseguito la laurea triennale in Arte del Fumetto e Illustrazione. Oggi continuo a formarmi in Graphic &amp; Multimedia Design presso l'Istituto Infobasic di Pescara, con focus su branding, visual design, motion e intelligenza artificiale applicata alla progettazione. Il mio approccio al lavoro nasce dall'ascolto: ogni cliente ha una storia da raccontare, e il mio compito è trovare il linguaggio visivo più autentico ed efficace per farlo. Curo ogni dettaglio con metodo e sensibilità estetica, muovendomi tra il minimal, l'elegante e il contemporaneo, senza perdere di vista l'obiettivo comunicativo, bilanciando estetica e funzione.
+          </p>
+          <div class="hero-anim hero-anim-5">          </div>
+</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PERCORSO ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <p class="section__label reveal">Percorso</p>
+        <div class="percorso__cols">
+
+          <div class="percorso__col">
+            <p class="percorso__col-header reveal">Formazione</p>
+
+            <div class="percorso__item reveal reveal--delay-1">
+              <p class="percorso__year">2026</p>
+              <p class="percorso__title">Certificazione AI</p>
+              <p class="percorso__subtitle">Il tuo futuro tra Orientamento, Innovazione e Competenze che Contano</p>
+              <p class="percorso__desc">Workshop sull'intelligenza artificiale applicata al mondo del lavoro, con approfondimento delle sue potenzialità come strumento trasversale in diversi ambiti professionali.</p>
+            </div>
+
+            <div class="percorso__item reveal reveal--delay-2">
+              <p class="percorso__year">2024 — In corso</p>
+              <p class="percorso__title">Graphic &amp; Multimedia Design</p>
+              <p class="percorso__subtitle">Istituto Infobasic, Pescara</p>
+              <p class="percorso__desc">Formazione biennale in Graphic &amp; Multimedia Design. Percorso pratico su visual design, branding, video, motion design, 3D, utilizzo dell'intelligenza artificiale e project lab.</p>
+            </div>
+
+            <div class="percorso__item reveal reveal--delay-3">
+              <p class="percorso__year">2020 — 2024</p>
+              <p class="percorso__title">Diploma Accademico di Primo Livello</p>
+              <p class="percorso__subtitle">Accademia di Belle Arti, Macerata</p>
+              <p class="percorso__desc">Laurea triennale in Arte del Fumetto e Illustrazione, con focus su tecniche grafiche, ricerca visiva e contesto editoriale.</p>
+            </div>
+
+            <div class="percorso__item reveal reveal--delay-4">
+              <p class="percorso__year">2019</p>
+              <p class="percorso__title">Diploma di Liceo Artistico</p>
+              <p class="percorso__subtitle">G. Misticoni, Pescara</p>
+            </div>
+          </div>
+
+          <div class="percorso__divider"></div>
+
+          <div class="percorso__col">
+            <p class="percorso__col-header reveal">Esperienza</p>
+
+            <div class="percorso__item reveal reveal--delay-1">
+              <p class="percorso__year">2025 — In corso</p>
+              <p class="percorso__title">Collaborazione grafica</p>
+              <p class="percorso__subtitle">MuchColours Srl</p>
+              <p class="percorso__desc">Collaborazione grafica presso azienda specializzata in stampa digitale. Creazione di contenuti grafici per i canali social e realizzazione di grafiche destinate alla stampa digitale.</p>
+            </div>
+
+            <div class="percorso__item reveal reveal--delay-3">
+              <p class="percorso__year">2025</p>
+              <p class="percorso__title">Collaborazione grafica</p>
+              <p class="percorso__subtitle">Susil Edizioni</p>
+              <p class="percorso__desc">Collaborazione editoriale con focus su impaginazione, progettazione della copertina e realizzazione di illustrazioni interne per un libro.</p>
+            </div>
+
+            <div class="percorso__item reveal reveal--delay-4">
+              <p class="percorso__year">2023</p>
+              <p class="percorso__title">Stage formativo</p>
+              <p class="percorso__subtitle">Serigrafia CoffeeShirt S.n.c., Macerata</p>
+              <p class="percorso__desc">Stage formativo con focus sulla stampa serigrafica applicata a tessuti e capi di abbigliamento.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRUMENTI & COMPETENZE ===== -->
+    <section class="section">
+      <div class="container">
+        <p class="section__label reveal">Strumenti &amp; Competenze</p>
+        <div class="skills-grid">
+
+          <div class="skill-item reveal">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Adobe Photoshop</span>
+              <span class="skill-item__level">Avanzato</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:92%"></div></div>
+          </div>
+
+          <div class="skill-item reveal reveal--delay-1">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Adobe Illustrator</span>
+              <span class="skill-item__level">Avanzato</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:92%"></div></div>
+          </div>
+
+          <div class="skill-item reveal reveal--delay-2">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Adobe InDesign</span>
+              <span class="skill-item__level">Avanzato</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:90%"></div></div>
+          </div>
+
+          <div class="skill-item reveal reveal--delay-3">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Procreate</span>
+              <span class="skill-item__level">Avanzato</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:90%"></div></div>
+          </div>
+
+          <div class="skill-item reveal">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Canva</span>
+              <span class="skill-item__level">Avanzato</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:80%"></div></div>
+          </div>
+
+          <div class="skill-item reveal reveal--delay-1">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Adobe Dimension</span>
+              <span class="skill-item__level">Intermedio</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:65%"></div></div>
+          </div>
+
+          <div class="skill-item reveal reveal--delay-2">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Blender</span>
+              <span class="skill-item__level">Base</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:35%"></div></div>
+          </div>
+
+          <div class="skill-item reveal reveal--delay-3">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Adobe Premiere</span>
+              <span class="skill-item__level">Base</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:38%"></div></div>
+          </div>
+
+          <div class="skill-item reveal reveal--delay-4">
+            <div class="skill-item__top">
+              <span class="skill-item__name">Strumenti AI</span>
+              <span class="skill-item__level">Intermedio</span>
+            </div>
+            <div class="skill-item__bar"><div class="skill-item__bar-fill" style="width:65%"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOFT SKILLS ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <p class="section__label reveal">Soft Skills</p>
+        <div class="soft-tags-about">
+          <span class="tag-about tag-pop" style="--i:0">Comunicazione efficace</span>
+          <span class="tag-about tag-pop" style="--i:1">Problem solving</span>
+          <span class="tag-about tag-pop" style="--i:2">Pensiero critico</span>
+          <span class="tag-about tag-pop" style="--i:3">Creatività</span>
+          <span class="tag-about tag-pop" style="--i:4">Pianificazione &amp; organizzazione</span>
+          <span class="tag-about tag-pop" style="--i:5">Flessibilità &amp; Adattamento</span>
+          <span class="tag-about tag-pop" style="--i:6">Apprendimento autonomo</span>
+          <span class="tag-about tag-pop" style="--i:7">Gestione dello stress</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-section">
+          <a href="progetti.html" class="btn btn--filled btn--lg reveal">
+            Esplora i Progetti →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div>
+          <p class="footer__brand-name">Martina Bazzani</p>
+          <p class="footer__brand-loc">Montesilvano · Pescara</p>
+        </div>
+        <div class="footer__links">
+          <a href="mailto:martinabazzanigraphic@gmail.com" class="footer__link" style="display:flex;align-items:center;gap:7px;">martinabazzanigraphic@gmail.com<img src="loghi/email.png" alt="Email" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+          <a href="https://www.instagram.com/martinabazzanidesign/" target="_blank" rel="noopener" class="footer__link" style="display:flex;align-items:center;gap:7px;">@martinabazzanidesign<img src="loghi/Logo instagram.png" alt="Instagram" style="width:22px;height:22px;object-fit:contain;opacity:1;flex-shrink:0;"></a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Martina Bazzani. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
